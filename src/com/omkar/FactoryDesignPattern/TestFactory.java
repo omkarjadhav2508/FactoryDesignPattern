@@ -8,5 +8,13 @@ public class TestFactory {
 		Profession profession = pf.getProfession("doctor");
 		profession.print();
 		
+		
+		SingltonExample instance = SingltonExample.getSingltonInstance();
+		
+		System.out.println(instance);
+		
+		SingltonExample instance2 = SingltonExample.getSingltonInstance();
+	
+		System.out.println(instance2);
 	}
 }
